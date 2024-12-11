@@ -2,6 +2,9 @@
 
 Playing with the REST Countries endpoints and implemented a rest client.
 
+[REST Countries API Documentation](https://restcountries.com/)
+
+
 | Operation       | Description                                            |
 |:----------------|:-------------------------------------------------------|
 | allCountries()  | Returns all countries with their respective currencies |
