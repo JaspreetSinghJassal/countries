@@ -1,11 +1,11 @@
 ## Countries REST CLIENT 
 
-You'll find rest client for REST Countries - endpoints.
+Playing with the REST Countries endpoints and implemented a rest client.
 
-| Operation       | Description                                    |
-|:----------------|:-----------------------------------------------|
-| allCountries()  | All countries with their respective currencies |
-| allCurrencies() | All currencies with their respective countries |
+| Operation       | Description                                            |
+|:----------------|:-------------------------------------------------------|
+| allCountries()  | Returns all countries with their respective currencies |
+| allCurrencies() | Returns all currencies with their respective countries |
 
 
 ### Tests
