@@ -1,16 +1,15 @@
 package com.jazzjassal.countries.core.model;
 
+import com.jazzjassal.countries.util.Lists;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
 public record Currency(String name, List<String> countries) {
 
     public Currency {
-        // Sort the countries list during construction
-        countries = new ArrayList<>(countries);
-        Collections.sort(countries);
+        countries = Lists.sort(new ArrayList<>((countries)));
     }
 
     public static Currency of(Map.Entry<String, List<String>> mapEntry) {

@@ -1,11 +1,23 @@
 package com.jazzjassal.countries.util;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
 public class Lists {
 
-    public static <T> List<T> mergeLists(List<T> coll1, List<T> coll2) {
-        return Stream.concat(coll1.stream(), coll2.stream()).toList();
+    /**
+     * Merge content of two lists
+     */
+    public static <T> List<T> mergeLists(List<T> list1, List<T> list2) {
+        return Stream.concat(list1.stream(), list2.stream()).toList();
+    }
+
+    /**
+     * One-liner to sort a list of Strings
+     */
+    public static List<String> sort(List<String> list) {
+        Collections.sort(list);
+        return list;
     }
 }
